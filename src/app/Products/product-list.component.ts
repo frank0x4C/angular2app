@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 
 export class ProductListComponent {
   pageTitle: string= 'Products List';
+  showImage: boolean = false;
+  buttonText: string[] = ['Show Image','Hide Image'];
+  showImgShow: string= 'Show';
+  hideImgHide: string='Hide';
   imageWidth: number = 50;
   imageMargin: number =2;
   products: any[]=[
@@ -41,4 +45,17 @@ export class ProductListComponent {
       'imageUrl': './assets/images/hammer.jpg'
     }
   ];
+
+  toggleImage(): void{
+    this.showImage = !this.showImage;
+    this.buttonText = this.buttonText;      
+  };
+
+  setText(buttonText, showImage): void {
+    debugger;
+    if (this.showImage === true)
+    {document.getElementById("test").innerHTML = Show;}
+    else{
+    document.getElementById("id").innerHTML = buttonText[1];}
+  };
 }
