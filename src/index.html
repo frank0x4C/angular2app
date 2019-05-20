@@ -9,7 +9,21 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <div><pm-root></pm-root></div> <!--Component selector as directive here, directive= customhtml tag -->
+  <div><pm-root></pm-root> <!--Component selector as directive here, directive are custom html tag -->
+  <div id="root"> Loading..<div>
+  <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+  <script src="https://unpkg.com/react/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
 
+  <div id="reactComp">
+  <script type="text/babel">
+  <img src= {("./assets/images/reactImage.png")}/>
+  const Greeting = () => <h1>React Component in a Angular2 App</h1>;
+  ReactDOM.render(
+      <Greeting />,
+      document.getElementById('root')
+  );
+  </script></div>
+</div>
 </body>
 </html>

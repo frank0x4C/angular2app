@@ -18,10 +18,13 @@
       <thead>
         <tr>
           <th>
-            <button class='btn-btn-primary' id= 'test' (click)='toggleImage() && setText()'>
-              
-              
-              
+            <button class='btn-btn-primary' id= 'test' (click)='toggleImage()'>
+                {{showImage? 'Hide' : 'Show'}} Image
+
+              <div *ngIf="showImage === true; else elseBlock">Hide</div>
+              <ng-template #elseBlock>Show</ng-template>
+
+
             </button>
           </th>
           <th>Product</th>

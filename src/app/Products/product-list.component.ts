@@ -48,14 +48,13 @@ export class ProductListComponent {
 
   toggleImage(): void{
     this.showImage = !this.showImage;
-    this.buttonText = this.buttonText;      
+    this.buttonText = this.buttonText;
   };
 
-  setText(buttonText, showImage): void {
-    debugger;
-    if (this.showImage === true)
-    {document.getElementById("test").innerHTML = Show;}
-    else{
-    document.getElementById("id").innerHTML = buttonText[1];}
-  };
+  // setText(buttonText, showImage): void {
+  //   if (this.showImage === true)
+  //   {document.getElementById('test').innerHTML = buttonText[0];}
+  //   else{
+  //   document.getElementById('test').innerHTML = buttonText[1];}
+  // };
 }
